@@ -1,0 +1,214 @@
+body{
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 20px 20px; /* Aumenta el espacio interior para que no choque con el nav */
+  text-align: center;
+  background-color: #f8f9fa;
+}
+h1 {
+  font-size: 50px; /* Puedes ajustar este valor */
+  font-weight: bold;
+  color: #343a40;
+  margin: 0;
+
+}
+body {
+  background-color: #f8f9fa;
+
+}
+/* Barra de navegacion inicio */
+nav {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  position: relative;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu>ul>li {
+  padding: 15px 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  color: #343a40;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu ul li:hover {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  color: #343a40;
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.submenu li:last-child a {
+  border-bottom: none;
+}
+
+.menu li:hover>.submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+  margin-left: 1px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.submenu li:hover>.submenu {
+  visibility: visible;
+  opacity: 1;
+}
+/* Barra de navegacion Final*/
+
+/* Botones gigantes en el lobby inicio */
+.acciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 75vh; /* Altura total del cuerpo */
+  background-color: #f8f9fa;
+}
+
+.acciones section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.acciones a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.acciones a:hover {
+  background-color: #e9ecef;
+}
+/* Botones gigantes en el lobby Fin */
+
+
+/* From Uiverse.io by satyamchaudharydev */
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 240px;
+  height: 254px;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.card>* {
+  margin: 0;
+
+}
+
+.card__title {
+  font-size: 23px;
+  font-weight: 900;
+  color: #333;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__form input {
+  outline: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  padding: 0.6em;
+  border-radius: 14px;
+  border: 1px solid #333;
+  color: black;
+}
+
+.card__form button {
+  border: 0;
+  background: #111;
+  color: #fff;
+  padding: 0.68em;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+.sign-up:hover {
+  opacity: 0.8;
+}
