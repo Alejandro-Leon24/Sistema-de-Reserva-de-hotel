@@ -1,5 +1,5 @@
 body{
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 header {
   padding: 20px 20px; /* Aumenta el espacio interior para que no choque con el nav */
@@ -152,63 +152,26 @@ nav {
 }
 /* Botones gigantes en el lobby Fin */
 
-
-/* From Uiverse.io by satyamchaudharydev */
-.container {
-  display: grid;
-  place-items: center;
-}
-
-.card {
-  width: 240px;
-  height: 254px;
-  padding: 0 15px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 12px;
-  background: #f8f9fa;
-  border-radius: 20px;
-}
-
-.card>* {
-  margin: 0;
-
-}
-
-.card__title {
-  font-size: 23px;
-  font-weight: 900;
-  color: #333;
-}
-
-.card__form {
+form.formulario{
   display: flex;
   flex-direction: column;
+  align-items: start;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 100px;
   gap: 10px;
 }
 
-.card__form input {
-  outline: 0;
-  background: rgb(255, 255, 255);
-  box-shadow: transparent 0px 0px 0px 1px inset;
-  padding: 0.6em;
-  border-radius: 14px;
-  border: 1px solid #333;
-  color: black;
-}
-
-.card__form button {
-  border: 0;
-  background: #111;
-  color: #fff;
-  padding: 0.68em;
-  border-radius: 14px;
+form.formulario label{
+  font-size: 20px;
   font-weight: bold;
+  color: #343a40;
 }
 
-.sign-up:hover {
-  opacity: 0.8;
+form.formulario input{
+  width: 100%;
+  padding: 10px; /* agrega un borde interno para que se vea mejor la letra */
+  border: 1px solid #ccc; /* Cambia el borde a gris */
+  border-radius: 50px; /* Cambia el borde a redondeado */
+  font-size: 16px;
 }
