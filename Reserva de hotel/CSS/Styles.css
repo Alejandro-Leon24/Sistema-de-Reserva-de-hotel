@@ -62,6 +62,9 @@ nav {
   font-weight: bold;
   white-space: nowrap;
 }
+.menu a:active{
+  transform: scale(0.95); /* Efecto de presionar el botón */
+}
 
 .menu ul li:hover {
   background-color: #e9ecef;
@@ -152,12 +155,37 @@ nav {
 }
 /* Botones gigantes en el lobby Fin */
 
+/* Estilo general para todos los botones */
+button{
+  padding: 10px;
+  justify-content: center;
+  border: 1px solid #ccc; /* Cambia el borde a gris */
+  border-radius: 10px; /* Cambia el borde a redondeado */
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Efecto de animación al hacer hover */
+}
+button:active{
+  transform: scale(0.95); /* Efecto de presionar el botón */
+}
+button:hover{
+  scale:1.05;
+}
+
+img{
+  opacity: 0.5;
+  width: 100%;
+}
+
+/* Estilo especifico para la clase formulario */
+
 form.formulario{
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 100%;
-  max-width: 600px;
+  max-width: none;
+  position: relative;
+  max-height: 50px;
   margin-left: 100px;
   gap: 10px;
 }
@@ -169,9 +197,29 @@ form.formulario label{
 }
 
 form.formulario input{
-  width: 100%;
+  width: 40%;
   padding: 10px; /* agrega un borde interno para que se vea mejor la letra */
   border: 1px solid #ccc; /* Cambia el borde a gris */
-  border-radius: 50px; /* Cambia el borde a redondeado */
+  border-radius: 10px; /* Cambia el borde a redondeado */
   font-size: 16px;
+}
+
+form.formulario button.Enviar{
+  color: white;
+  background-color: green;
+  margin-right: 15px;
+}
+
+form.formulario button.Enviar:hover{
+  color: white;
+  background-color: rgb(123, 183, 123);
+}
+
+form.formulario button.Cancelar{
+  color: white;
+  background-color: red;
+}
+form.formulario button.Cancelar:hover{
+  color: white;
+  background-color: rgb(246, 107, 107);
 }

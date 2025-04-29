@@ -63,10 +63,21 @@
     <form action="/" class="formulario">
         <h2>Ingrese la información del huesped</h2>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Ingrese el nombre del huesped">
-        <button type="submit" class="Enviar">Guardar</button>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del huesped">
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese el apellido del huesped">
+        <label for="telefono">Teléfono:</label>
+        <input type="number" name="telefono" id="telefono" placeholder="Ingrese el teléfono del huesped">
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese el correo del huesped">
+        <label for="cedula">Cedula:</label>
+        <input type="number" name="cedula" id="cedula" placeholder="Ingrese la cedula del huesped">
+        <div>
+            <button type="button" class="Enviar">Guardar</button>
+            <button type="button" class="Cancelar">Cancelar</button>
+        </div>
     </form>
-    
+
 </body>
 
 </html>
