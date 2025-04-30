@@ -1,5 +1,5 @@
-body{
-  font-family: 'Times New Roman', Times, serif;
+*{
+  font-family: poppins, sans-serif;
 }
 header {
   padding: 20px 20px; /* Aumenta el espacio interior para que no choque con el nav */
@@ -134,6 +134,15 @@ nav {
   padding: 20px;
 }
 
+.acciones section img{
+  width: 50px;
+  margin-right: 20px;
+}
+
+.acciones section:active{
+  transform: scale(0.99); /* Efecto de presionar el botón */
+}
+
 .acciones a {
   display: flex;
   justify-content: center;
@@ -164,6 +173,7 @@ button{
   font-size: 20px;
   cursor: pointer;
   transition: transform 0.2s; /* Efecto de animación al hacer hover */
+  color: white;
 }
 button:active{
   transform: scale(0.95); /* Efecto de presionar el botón */
@@ -171,7 +181,23 @@ button:active{
 button:hover{
   scale:1.05;
 }
+/* Estilo especifico para los botones de enviar y cancelar */
+.Enviar{
+  background-color: green;
+}
 
+.Enviar:hover{
+  background-color: rgb(123, 183, 123);
+}
+
+.Cancelar{
+  background-color: red;
+}
+.Cancelar:hover{
+  background-color: rgb(246, 107, 107);
+}
+
+/* Imagen principal de inicio*/
 img{
   opacity: 0.5;
   width: 100%;
@@ -185,7 +211,6 @@ form.formulario{
   align-items: start;
   max-width: none;
   position: relative;
-  max-height: 50px;
   margin-left: 100px;
   gap: 10px;
 }
@@ -204,22 +229,97 @@ form.formulario input{
   font-size: 16px;
 }
 
+form.formulario select{
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Cambia el borde a gris */
+  border-radius: 10px; /* Cambia el borde a redondeado */
+}
+
 form.formulario button.Enviar{
-  color: white;
-  background-color: green;
   margin-right: 15px;
 }
 
-form.formulario button.Enviar:hover{
-  color: white;
-  background-color: rgb(123, 183, 123);
+/* Estilo para la columna de acciones donde esta el editar */
+.acciones-editar{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-form.formulario button.Cancelar{
-  color: white;
-  background-color: red;
+/* Estilo para la tabla */
+
+table {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
 }
-form.formulario button.Cancelar:hover{
-  color: white;
-  background-color: rgb(246, 107, 107);
+
+thead tr{
+  background-color: #343a40; /* Cambia el color de fondo del encabezado */
+  color: white; /* Cambia el color del texto del encabezado */
+  font-size: 20px;
+}
+
+td, th{
+  padding: 12px;
+  border: 1px solid #ccc; /* Cambia el borde a gris */
+}
+
+td{
+  text-align: start;
+}
+
+/* Fondo difuminado (modal) */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  justify-content: center;
+}
+
+/* Caja del formulario para el modal*/
+.modal-contenido {
+  background: white;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+  max-width: 450px;
+  max-height: 600px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido form.formulario{
+  width: 600px;
+  margin-left: 50px;
+}
+
+/* Estilo para el icono de editar y eliminar de la tabla */
+.fa-solid.fa-pen{
+ color:green
+
+}
+
+.fa-solid{
+  cursor: pointer;
+  transition: transform 0.2s; /* Efecto de animación al hacer hover */
+}
+.fa-solid:active{
+  transform: scale(0.85); /* Efecto de presionar el botón */
+}
+.fa-solid:hover{
+  scale:1.08;
+}
+
+.fa-solid.fa-trash{
+  color:red
 }

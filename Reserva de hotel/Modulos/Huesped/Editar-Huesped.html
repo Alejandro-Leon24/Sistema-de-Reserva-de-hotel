@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Huesped</title>
+    <title>Editar Huesped</title>
     <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -62,18 +63,12 @@
             </li>
         </ul>
     </nav>
-
     <form class="formulario">
-        <h2>Lista de huesped</h2>
-        <label for="Cedula">Ingrese numero de cedula: </label>
-        <input type="number" id="Cedula" name="Cedula" placeholder="Ingrese el numero de cedula" required>
-        <select name="Estado-Huesped" id="Estado-Huesped">
-            <option value="hospedado">Hospedado</option>
-            <option value="no_hospedado">No Hospedado</option>
-        </select>
+        <h2>Editar Huesped</h2>
+        <label for="cedula">Cedula:</label>
+        <input type="text" name="cedula" id="cedula" placeholder="Ingrese el numero de cedula" required>
         <button class="Enviar">Buscar</button>
     </form>
-
 
     <table>
         <thead>
@@ -84,6 +79,7 @@
                 <th>Teléfono</th>
                 <th>Correo</th>
                 <th>Cedula</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -94,6 +90,9 @@
                 <td>1234567890</td>
                 <td>JuanPerez@gmail.com</td>
                 <td>0987654321</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
             </tr>
             <tr>
                 <td>2</td>
@@ -102,6 +101,9 @@
                 <td>0987654321</td>
                 <td>correo2@gmail.com</td>
                 <td>0932453454</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
 
             </tr>
             <tr>
@@ -111,11 +113,46 @@
                 <td>1234567890</td>
                 <td>correo4@gmail.com</td>
                 <td>09234523434</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
 
             </tr>
         </tbody>
     </table>
 
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <form class="formulario">
+                <h2>Ingrese la información del huesped</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del huesped">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese el apellido del huesped">
+                <label for="telefono">Teléfono:</label>
+                <input type="number" name="telefono" id="telefono" placeholder="Ingrese el teléfono del huesped">
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingrese el correo del huesped">
+                <label for="cedula">Cedula:</label>
+                <input type="number" name="cedula" id="cedula" placeholder="Ingrese la cedula del huesped">
+                <div>
+                    <button type="button" class="Enviar">Guardar</button>
+                    <button type="button" class="Cancelar" onclick="cerrarModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

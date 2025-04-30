@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../../CSS/Styles.css" />
-    <title>Registrar Huesped</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Huesped</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
     <header>
         <h1>Reserva de hotel</h1>
@@ -62,23 +63,63 @@
     </nav>
 
     <form class="formulario">
-        <h2>Ingrese la información del huesped</h2>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del huesped" required>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Ingrese el apellido del huesped" required>
-        <label for="telefono">Teléfono:</label>
-        <input type="number" name="telefono" id="telefono" placeholder="Ingrese el teléfono del huesped" required>
-        <label for="correo">Correo:</label>
-        <input type="email" name="correo" id="correo" placeholder="Ingrese el correo del huesped" required>
-        <label for="cedula">Cedula:</label>
-        <input type="number" name="cedula" id="cedula" placeholder="Ingrese la cedula del huesped" required>
-        <div>
-            <button class="Enviar">Guardar</button>
-            <button class="Cancelar">Cancelar</button>
-        </div>
+        <h2>Eliminar Huesped</h2>
+        <label for="Cedula">Cedula:</label>
+        <input type="number" name="Cedula" id="Cedula" placeholder="Ingrese el numero de cedula" required>
+        <button class="Enviar">Buscar</button>
     </form>
 
-</body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Cedula</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>1234567890</td>
+                <td>JuanPerez@gmail.com</td>
+                <td>0987654321</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>Gonzalez</td>
+                <td>0987654321</td>
+                <td>correo2@gmail.com</td>
+                <td>0932453454</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carlos</td>
+                <td>Lopez</td>
+                <td>1234567890</td>
+                <td>correo4@gmail.com</td>
+                <td>09234523434</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
 </html>
