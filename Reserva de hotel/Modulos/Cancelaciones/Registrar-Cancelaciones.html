@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Habitación</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="../../CSS/Styles_Habitaciones.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Reserva de hotel</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li> <a href="../../index.html">Inicio</a></li>
+            <li>
+                <a href="../Huesped/Lobby-Huesped.html">Huesped</a>
+                <ul class="submenu">
+                    <li><a href="../Huesped/Registrar-Huesped.html">Registrar Huesped</a></li>
+                    <li><a href="../Huesped/Listar-Huesped.html">Mostrar Huesped</a></li>
+                    <li><a href="../Huesped/Editar-Huesped.html">Editar Huesped</a></li>
+                    <li><a href="../Huesped/Eliminar-Huesped.html">Eliminar Huesped</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Lobby-Habitaciones.html">Habitación</a>
+                <ul class="submenu">
+                    <li><a href="Registrar-Habitaciones.html">Registrar Habitación</a></li>
+                    <li><a href="Listar-Habitaciones.html">Mostrar Habitación</a></li>
+                    <li><a href="Editar-Habitaciones.html">Editar Habitación</a></li>
+                    <li><a href="Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Servicios</a></li>
+                    <li><a href="#">Mostrar Servicios</a></li>
+                    <li><a href="#">Editar Servicios</a></li>
+                    <li><a href="#">Eliminar Servicios</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Factura</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Factura</a></li>
+                    <li><a href="#">Mostrar Factura</a></li>
+                    <li><a href="#">Editar Factura</a></li>
+                    <li><a href="#">Eliminar Factura</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Lobby-Cancelaciones.html">Cancelaciones</a>
+                <ul class="submenu">
+                    <li><a href="Registrar-Cancelaciones.html">Registrar Cancelaciones</a></li>
+                    <li><a href="Lista-Cancelaciones.html">Mostrar Cancelaciones</a></li>
+                    <li><a href="Editar-Cancelaciones.html">Editar Cancelaciones</a></li>
+                    <li><a href="Eliminar-Cancelaciones.html">Eliminar Cancelaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <form class="formulario">
+        <h2>Ingrese el motivo de la Habitación</h2>
+        <label for="nombre">Nombre del huésped:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del huésped" required>
+        <label for="cedula">Cédula:</label>
+        <input type="text" name="cedula" id="cedula" placeholder="Ingrese la cédula del huésped" required>
+
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value="Estado">Seleccione un estado</option>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+        </select>
+
+        <label for="motivo">Motivo de cancelación:</label>
+        <textarea name="motivo" id="motivo" placeholder="Explique el motivo de cancelación" rows="4" cols="70" required></textarea>
+
+        <div>
+            <button class="Enviar">Registrar</button>
+            <button class="Cancelar">Cancelar</button>
+        </div>
+    </form>
+</body>
+</html>

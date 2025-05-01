@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../../CSS/Styles.css" />
-    <title>Lobby Cancelaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Habitación</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="../../CSS/Styles_Habitaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -58,31 +62,57 @@
             </li>
         </ul>
     </nav>
-    <main class="acciones">
-        <section>
-            <a href="Registrar-Cancelaciones.html">
-                <img src="../../Imagenes/Cancelacion-Room.png" class="img_room" alt="Registrar Cancelaciones">
-                Registrar Cancelación
-            </a>
-        </section>
-        <section>
-            <a href="Lista-Cancelaciones.html">
-                <img src="../../Imagenes/Listar-Usuario.png" alt="Lista Cancelaciones">
-                Mostrar Cancelación
-            </a>
-        </section>
-        <section>
-            <a href="Editar-Cancelaciones.html">
-                <img src="../../Imagenes/Editar.png" alt="Editar Cancelaciones">
-                Editar Cancelación
-            </a>
-        </section>
-        <section>
-            <a href="Eliminar-Cancelaciones.html">
-                <img src="../../Imagenes/Eliminar.png" alt="Eliminar Cancelaciones">
-                Eliminar Cancelación
-            </a>
-        </section>
-    </main>
+    <form class="formulario">
+        <h2>Eliminar Cancelación</h2>
+        <label for="num_cedula">Número de cedula: </label>
+        <input type="number" id="num_cedula" name="num_cedula" placeholder="Ingrese el número de cedula" required>
+        <button class="Enviar">Buscar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Cedula</th>
+                <th>Habitacion</th>
+                <th>Motivo</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Spencer Reid</td>
+                <td>101</td>
+                <td>Inactivo</td>
+                <td>Cambio en la fecha de vuelo</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Justin Bieber</td>
+                <td>102</td>
+                <td>Inactivo</td>
+                <td>Error en la reserva</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dylan O'Brien</td>
+                <td>103</td>
+                <td>Inactivo</td>
+                <td>Emergencia familiar</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
 </body>
 </html>

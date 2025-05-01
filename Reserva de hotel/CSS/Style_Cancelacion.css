@@ -1,0 +1,7 @@
+#modal_motivo {
+    width: 30%; 
+    height: 40px; 
+    resize: none;
+    padding: 5px; 
+    font-size: 14px; 
+}
