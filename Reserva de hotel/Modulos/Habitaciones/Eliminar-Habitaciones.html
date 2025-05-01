@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Habitación</title>
+    <title>Eliminar Habitación</title>
     <link rel="stylesheet" href="../../CSS/Styles.css">
     <link rel="stylesheet" href="../../CSS/Styles_Habitaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -61,24 +62,61 @@
             </li>
         </ul>
     </nav>
-
     <form class="formulario">
-        <h2>Ingrese la información de la Habitación</h2>
-        <label for="num_habitacion">Número de Habitación:</label>
-        <input type="number" name="num_habitacion" id="num_habitacion" placeholder="Ingrese el número de habitación" required>
-        <label for="precio">Precio:</label>
-        <input type="number" name="precio" id="precio" placeholder="Ingrese el precio de la habitación" required>
-        <label for="tamaño_habitacion">Tamaño de la habitación:</label>
-        <select name="tamaño_habitacion" id="tamaño_habitacion" required>
-            <option value="">Seleccione un tamaño</option>
-            <option value="pequeña">Pequeña 1 - 2</option>
-            <option value="mediana">Mediana 3 - 4</option>
-            <option value="grande">Grande 5 - 8</option>
-        </select>
-        <div>
-            <button class="Enviar">Guardar</button>
-            <button class="Cancelar">Cancelar</button>
-        </div>
+        <h2>Eliminar Habitación</h2>
+        <label for="num_habitacion">Número de Habitación: </label>
+        <input type="number" id="num_habitacion" name="num_habitacion" placeholder="Ingrese el número de Habitación" required>
+        <button class="Enviar">Buscar</button>
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Habitación</th>
+                <th>Precio</th>
+                <th>Tamaño</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>$150</td>
+                <td>Pequeña</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>102</td>
+                <td>$200</td>
+                <td>Mediana</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>103</td>
+                <td>$300</td>
+                <td>Grande</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>104</td>
+                <td>$300</td>
+                <td>Grande</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

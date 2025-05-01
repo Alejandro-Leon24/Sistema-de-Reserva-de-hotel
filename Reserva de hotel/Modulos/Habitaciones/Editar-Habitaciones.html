@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Habitaciones</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="../../CSS/Styles_Habitaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de hotel</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li> <a href="../../index.html">Inicio</a></li>
+            <li>
+                <a href="../Huesped/Lobby-Huesped.html">Huesped</a>
+                <ul class="submenu">
+                    <li><a href="../Huesped/Registrar-Huesped.html">Registrar Huesped</a></li>
+                    <li><a href="../Huesped/Listar-Huesped.html">Mostrar Huesped</a></li>
+                    <li><a href="../Huesped/Editar-Huesped.html">Editar Huesped</a></li>
+                    <li><a href="../Huesped/Eliminar-Huesped.html">Eliminar Huesped</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Lobby-Habitaciones.html">Habitación</a>
+                <ul class="submenu">
+                    <li><a href="Registrar-Habitaciones.html">Registrar Habitación</a></li>
+                    <li><a href="Listar-Habitaciones.html">Mostrar Habitación</a></li>
+                    <li><a href="Editar-Habitaciones.html">Editar Habitación</a></li>
+                    <li><a href="Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Servicios</a></li>
+                    <li><a href="#">Mostrar Servicios</a></li>
+                    <li><a href="#">Editar Servicios</a></li>
+                    <li><a href="#">Eliminar Servicios</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Factura</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Factura</a></li>
+                    <li><a href="#">Mostrar Factura</a></li>
+                    <li><a href="#">Editar Factura</a></li>
+                    <li><a href="#">Eliminar Factura</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cancelaciones</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Cancelaciones</a></li>
+                    <li><a href="#">Mostrar Cancelaciones</a></li>
+                    <li><a href="#">Editar Cancelaciones</a></li>
+                    <li><a href="#">Eliminar Cancelaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <form class="formulario">
+        <h2>Editar Habitación</h2>
+        <label for="num_habitacion">Número de Habitación: </label>
+        <input type="number" id="num_habitacion" name="num_habitacion" placeholder="Ingrese el número de Habitación" required>
+        <button class="Enviar">Buscar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Habitación</th>
+                <th>Precio</th>
+                <th>Tamaño</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>$150</td>
+                <td>Pequeña</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>102</td>
+                <td>$200</td>
+                <td>Mediana</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>103</td>
+                <td>$300</td>
+                <td>Grande</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>104</td>
+                <td>$300</td>
+                <td>Grande</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <form class="formulario">
+                <h2>Ingrese la información de la Habitación</h2>
+                <label for="num_habitacion">Número de Habitación:</label>
+                <input type="number" name="num_habitacion" id="num_habitacion" placeholder="Ingrese el número de habitación" required>
+                <label for="precio">Precio:</label>
+                <input type="number" name="precio" id="precio" placeholder="Ingrese el precio de la habitación" required>
+                <label for="tamaño_habitacion">Tamaño de la habitación:</label>
+                <select name="tamaño_habitacion" id="tamaño_habitacion" required>
+                    <option value="">Seleccione un tamaño</option>
+                    <option value="pequeña">Pequeña 1 - 2</option>
+                    <option value="mediana">Mediana 3 - 4</option>
+                    <option value="grande">Grande 5 - 8</option>
+                </select>
+                <div>
+                    <button type="button" class="Enviar">Guardar</button>
+                    <button type="button" class="Cancelar" onclick="cerrarModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
