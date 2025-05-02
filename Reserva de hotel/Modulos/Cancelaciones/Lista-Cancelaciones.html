@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Habitaciones</title>
     <link rel="stylesheet" href="../../CSS/Styles.css">
-    <link rel="stylesheet" href="../../CSS/Styles_Habitaciones.css">
+    <link rel="stylesheet" href="../../CSS/Style_Cancelacion.css">
 </head>
 <body>
     <header>
@@ -24,30 +22,30 @@
                 </ul>
             </li>
             <li>
-                <a href="Lobby-Habitaciones.html">Habitación</a>
+                <a href="../Habitaciones/Lobby-Habitaciones.html">Habitación</a>
                 <ul class="submenu">
-                    <li><a href="Registrar-Habitaciones.html">Registrar Habitación</a></li>
-                    <li><a href="Listar-Habitaciones.html">Mostrar Habitación</a></li>
-                    <li><a href="Editar-Habitaciones.html">Editar Habitación</a></li>
-                    <li><a href="Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
+                    <li><a href="../Habitaciones/Registrar-Habitaciones.html">Registrar Habitación</a></li>
+                    <li><a href="../Habitaciones/Listar-Habitaciones.html">Mostrar Habitación</a></li>
+                    <li><a href="../Habitaciones/Editar-Habitaciones.html">Editar Habitación</a></li>
+                    <li><a href="../Habitaciones/Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Servicios</a>
+                <a href="../Servicios/Lobby-Servicios.html">Servicios</a>
                 <ul class="submenu">
-                    <li><a href="#">Registrar Servicios</a></li>
-                    <li><a href="#">Mostrar Servicios</a></li>
-                    <li><a href="#">Editar Servicios</a></li>
-                    <li><a href="#">Eliminar Servicios</a></li>
+                    <li><a href="../Servicios/Registrar-Servicios.html">Registrar Servicios</a></li>
+                    <li><a href="../Servicios/Listar-Servicios.html">Mostrar Servicios</a></li>
+                    <li><a href="../Servicios/Editar-Servicios.html">Editar Servicios</a></li>
+                    <li><a href="../Servicios/Eliminar-Servicios.html">Eliminar Servicios</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Factura</a>
+                <a href="../Facturas/Lobby-Facturas.html">Factura</a>
                 <ul class="submenu">
-                    <li><a href="#">Registrar Factura</a></li>
-                    <li><a href="#">Mostrar Factura</a></li>
-                    <li><a href="#">Editar Factura</a></li>
-                    <li><a href="#">Eliminar Factura</a></li>
+                    <li><a href="../Facturas/Registrar-Facturas.html">Registrar Factura</a></li>
+                    <li><a href="../Facturas/Listar-Facturas.html">Mostrar Factura</a></li>
+                    <li><a href="../Facturas/Editar-Facturas.html">Editar Factura</a></li>
+                    <li><a href="../Facturas/Eliminar-Facturas.html">Eliminar Factura</a></li>
                 </ul>
             </li>
             <li>
@@ -63,8 +61,8 @@
     </nav>
 
     <form class="formulario">
-        <label for="Num_Habitacion">Seleccione la habitación cancelada:</label>
-        <select id="Num_Habitacion" name="Num_Habitacion" required>
+        <h2>Seleccione la habitación cancelada:</h2>
+        <select class="Seleccionar-Habitacion" id="Num_Habitacion" required>
             <option value="">Seleccione una habitación</option>
             <option value="101">101</option>
             <option value="102">102</option>
