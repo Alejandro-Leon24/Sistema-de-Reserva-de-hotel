@@ -1,0 +1,13 @@
+/* Estilo del formulario */
+form.formulario {
+  flex-direction: column;
+  width: 100%;
+  max-width: 950px;
+  margin: 25px auto;
+  margin-left: 500px;
+}
+
+.Enviar, .Cancelar{
+  margin-top: 15px;
+  padding: 10px 57px;
+}

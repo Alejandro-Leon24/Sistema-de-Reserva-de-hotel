@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <link rel="stylesheet" href="../../CSS/Styles.css" />
     <title>Registrar Huesped</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Reserva de hotel</h1>
+      <h1>Reserva de hotel</h1>
     </header>
     <nav class="menu">
-        <ul>
-            <li> <a href="../../index.html">Inicio</a></li>
-            <li>
-                <a href="Lobby-Huesped.html">Huesped</a>
-                <ul class="submenu">
-                    <li><a href="Registrar-Huesped.html">Registrar Huesped</a></li>
-                    <li><a href="Listar-Huesped.html">Mostrar Huesped</a></li>
-                    <li><a href="Editar-Huesped.html">Editar Huesped</a></li>
-                    <li><a href="Eliminar-Huesped.html">Eliminar Huesped</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Habitación</a>
-                <ul class="submenu">
-                    <li><a href="#">Registrar Habitación</a></li>
-                    <li><a href="#">Mostrar Habitación</a></li>
-                    <li><a href="#">Editar Habitación</a></li>
-                    <li><a href="#">Eliminar Habitación</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Servicios</a>
-                <ul class="submenu">
-                    <li><a href="#">Registrar Servicios</a></li>
-                    <li><a href="#">Mostrar Servicios</a></li>
-                    <li><a href="#">Editar Servicios</a></li>
-                    <li><a href="#">Eliminar Servicios</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Factura</a>
-                <ul class="submenu">
-                    <li><a href="#">Registrar Factura</a></li>
-                    <li><a href="#">Mostrar Factura</a></li>
-                    <li><a href="#">Editar Factura</a></li>
-                    <li><a href="#">Eliminar Factura</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Cancelaciones</a>
-                <ul class="submenu">
-                    <li><a href="#">Registrar Cancelaciones</a></li>
-                    <li><a href="#">Mostrar Cancelaciones</a></li>
-                    <li><a href="#">Editar Cancelaciones</a></li>
-                    <li><a href="#">Eliminar Cancelaciones</a></li>
-                </ul>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="../../index.html">Inicio</a></li>
+        <li>
+          <a href="Lobby-Huesped.html">Huesped</a>
+          <ul class="submenu">
+            <li><a href="Registrar-Huesped.html">Registrar Huesped</a></li>
+            <li><a href="Listar-Huesped.html">Mostrar Huesped</a></li>
+            <li><a href="Editar-Huesped.html">Editar Huesped</a></li>
+            <li><a href="Eliminar-Huesped.html">Eliminar Huesped</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Habitación</a>
+          <ul class="submenu">
+            <li><a href="#">Registrar Habitación</a></li>
+            <li><a href="#">Mostrar Habitación</a></li>
+            <li><a href="#">Editar Habitación</a></li>
+            <li><a href="#">Eliminar Habitación</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Servicios</a>
+          <ul class="submenu">
+            <li><a href="#">Registrar Servicios</a></li>
+            <li><a href="#">Mostrar Servicios</a></li>
+            <li><a href="#">Editar Servicios</a></li>
+            <li><a href="#">Eliminar Servicios</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Factura</a>
+          <ul class="submenu">
+            <li><a href="#">Registrar Factura</a></li>
+            <li><a href="#">Mostrar Factura</a></li>
+            <li><a href="#">Editar Factura</a></li>
+            <li><a href="#">Eliminar Factura</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Cancelaciones</a>
+          <ul class="submenu">
+            <li><a href="#">Registrar Cancelaciones</a></li>
+            <li><a href="#">Mostrar Cancelaciones</a></li>
+            <li><a href="#">Editar Cancelaciones</a></li>
+            <li><a href="#">Eliminar Cancelaciones</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-
-    <form class="formulario">
+    <main>
+      <form class="formulario">
         <h2>Ingrese la información del huesped</h2>
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del huesped" required>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Ingrese el nombre del huesped"
+          required
+        />
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Ingrese el apellido del huesped" required>
+        <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="Ingrese el apellido del huesped"
+          required
+        />
         <label for="telefono">Teléfono:</label>
-        <input type="number" name="telefono" id="telefono" placeholder="Ingrese el teléfono del huesped" required>
+        <input
+          type="number"
+          name="telefono"
+          id="telefono"
+          placeholder="Ingrese el teléfono del huesped"
+          required
+        />
         <label for="correo">Correo:</label>
-        <input type="email" name="correo" id="correo" placeholder="Ingrese el correo del huesped" required>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="Ingrese el correo del huesped"
+          required
+        />
         <label for="cedula">Cedula:</label>
-        <input type="number" name="cedula" id="cedula" placeholder="Ingrese la cedula del huesped" required>
+        <input
+          type="number"
+          name="cedula"
+          id="cedula"
+          placeholder="Ingrese la cedula del huesped"
+          required
+        />
         <div>
-            <button class="Enviar">Guardar</button>
-            <button class="Cancelar">Cancelar</button>
+          <button class="Enviar">Guardar</button>
+          <button class="Cancelar">Cancelar</button>
         </div>
-    </form>
-
-</body>
-
+      </form>
+    </main>
+  </body>
 </html>
