@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Facturas</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="../../CSS/Style_Facturas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de hotel</h1>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li>
+                <a href="../Huesped/Lobby-Huesped.html">Huesped</a>
+                <ul class="submenu">
+                    <li><a href="../Huesped/Registrar-Huesped.html">Registrar Huesped</a></li>
+                    <li><a href="../Huesped/Listar-Huesped.html">Mostrar Huesped</a></li>
+                    <li><a href="../Huesped/Editar-Huesped.html">Editar Huesped</a></li>
+                    <li><a href="../Huesped/Eliminar-Huesped.html">Eliminar Huesped</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Habitaciones/Lobby-Habitaciones.html">Habitación</a>
+                <ul class="submenu">
+                    <li><a href="../Habitaciones/Registrar-Habitaciones.html">Registrar Habitación</a></li>
+                    <li><a href="../Habitaciones/Listar-Habitaciones.html">Mostrar Habitación</a></li>
+                    <li><a href="../Habitaciones/Editar-Habitaciones.html">Editar Habitación</a></li>
+                    <li><a href="../Habitaciones/Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Servicios</a></li>
+                    <li><a href="#">Mostrar Servicios</a></li>
+                    <li><a href="#">Editar Servicios</a></li>
+                    <li><a href="#">Eliminar Servicios</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Lobby-Facturas.html">Factura</a>
+                <ul class="submenu">
+                    <li><a href="Registrar-Facturas.html">Registrar Factura</a></li>
+                    <li><a href="Listar-Facturas.html">Mostrar Factura</a></li>
+                    <li><a href="Editar-Facturas.html">Editar Factura</a></li>
+                    <li><a href="Eliminar-Facturas.html">Eliminar Factura</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cancelaciones</a>
+                <ul class="submenu">
+                    <li><a href="#">Registrar Cancelaciones</a></li>
+                    <li><a href="#">Mostrar Cancelaciones</a></li>
+                    <li><a href="#">Editar Cancelaciones</a></li>
+                    <li><a href="#">Eliminar Cancelaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="eliminar-factura">
+            <form class="formulario">
+                <h2>Eliminar Factura</h2>
+                <label for="cedula">Ingrese la cédula:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Ej: 1234567890" required>
+                <button class="Enviar">Buscar</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nro</th>
+                        <th>Nombre</th>
+                        <th>Cédula</th>
+                        <th>Total pagado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alberto</td>
+                        <td>1234567890</td>
+                        <td>$50.00</td>
+                        <td class="acciones-eliminar">
+                            <a href="#modal-factura-1" class="icon-link"><i class="fa-solid fa-trash fa-lg"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jose</td>
+                        <td>1212121212</td>
+                        <td>$450.20</td>
+                        <td class="acciones-eliminar">
+                            <a href="#modal-factura-2" class="icon-link"><i class="fa-solid fa-trash fa-lg"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Aaron</td>
+                        <td>5454545454</td>
+                        <td>$150.20</td>
+                        <td class="acciones-eliminar">
+                            <a href="#modal-factura-3" class="icon-link"><i class="fa-solid fa-trash fa-lg"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Modal para Factura 1 -->
+            <div id="modal-factura-1" class="modal">
+                <div class="modal-contenido">
+                    <form class="formulario" action="#" method="post">
+                        <h2>Confirmar Eliminación</h2>
+                        <p>¿Está seguro que desea eliminar la siguiente factura?</p>
+                        
+                        <div class="factura-info">
+                            <p><strong>Número:</strong> 1</p>
+                            <p><strong>Nombre:</strong> Alberto</p>
+                            <p><strong>Cédula:</strong> 1234567890</p>
+                            <p><strong>Total pagado:</strong> $50.00</p>
+                            <p><strong>Habitación:</strong> 109</p>
+                            <p><strong>Fecha de Emisión:</strong> 12 feb 2025</p>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="Eliminar">Confirmar Eliminación</button>
+                            <a href="#" class="Cancelar">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Modal para Factura 2 -->
+            <div id="modal-factura-2" class="modal">
+                <div class="modal-contenido">
+                    <form class="formulario" action="#" method="post">
+                        <h2>Confirmar Eliminación</h2>
+                        <p>¿Está seguro que desea eliminar la siguiente factura?</p>
+                        
+                        <div class="factura-info">
+                            <p><strong>Número:</strong> 2</p>
+                            <p><strong>Nombre:</strong> Jose</p>
+                            <p><strong>Cédula:</strong> 1212121212</p>
+                            <p><strong>Total pagado:</strong> $450.20</p>
+                            <p><strong>Habitación:</strong> 103</p>
+                            <p><strong>Fecha de Emisión:</strong> 16 ene 2025</p>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="Eliminar">Confirmar Eliminación</button>
+                            <a href="#" class="Cancelar">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Modal para Factura 3 -->
+            <div id="modal-factura-3" class="modal">
+                <div class="modal-contenido">
+                    <form class="formulario" action="#" method="post">
+                        <h2>Confirmar Eliminación</h2>
+                        <p>¿Está seguro que desea eliminar la siguiente factura?</p>
+                        
+                        <div class="factura-info">
+                            <p><strong>Número:</strong> 3</p>
+                            <p><strong>Nombre:</strong> Aaron</p>
+                            <p><strong>Cédula:</strong> 5454545454</p>
+                            <p><strong>Total pagado:</strong> $150.20</p>
+                            <p><strong>Habitación:</strong> 102</p>
+                            <p><strong>Fecha de Emisión:</strong> 19 ene 2025</p>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="Eliminar">Confirmar Eliminación</button>
+                            <a href="#" class="Cancelar">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
