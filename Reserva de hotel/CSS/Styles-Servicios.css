@@ -1,0 +1,17 @@
+/* Estilo del formulario */
+form.formulario {
+  max-width: 400px;
+  margin: 25px auto;
+  width: 100%;
+}
+form.formulario div{
+  width: 100%;
+}
+
+.Enviar, .Cancelar{
+  margin-top: 10px;
+  width: 47.5%;
+}
+form.formulario input{
+  width: 95%;;
+}

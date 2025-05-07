@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../../CSS/Styles.css"/>
-    <link rel="stylesheet" href="../../CSS/Styles-Servicios.css"/>
-    <title>Registrar Servicios</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Eliminar Servicios</title>
 </head>
-
 <body>
     <header>
         <h1>Reserva de Hotel</h1>
@@ -62,20 +60,67 @@
         </ul>
     </nav>
 
-    <form action="/" class="formulario">
-        <h2>Ingrese la información del Servicio</h2>
-        <label form="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del servicio">
-        <label form="precio">Precio:</label>
-        <input type="text" name="precio" id="precio" placeholder="Ingrese el precio del servicio">
-        <label form="fecha">Fecha:</label>
-        <input type="date" name="cedula" id="cedula" placeholder="Ingrese la fecha de registro">
-        <label form="descripcion">Descripción:</label>
-        <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese la descripción del servicio">
-        <div>
-            <button type="button" class="Enviar">Guardar</button>
-            <button type="button" class="Cancelar">Cancelar</button>
-        </div>
+    <form class="formulario">
+        <h2>Eliminar Servicio</h2>
+        <label for="nombre">Ingrese el nombre del servicio:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre del servicio" required>
+        <button class="Enviar">Buscar</button>
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Spa</td>
+                <td>$45</td>
+                <td>01/05/2025</td>
+                <td>Cuidado facial</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x" onclick="eliminarFila(this)"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lavanderia</td>
+                <td>$20</td>
+                <td>02/05/2025</td>
+                <td>Ropa delicada y de color</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x" onclick="eliminarFila(this)"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Almuerzo</td>
+                <td>$15</td>
+                <td>03/05/2025</td>
+                <td>Sopa, arroz y jugo</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-trash fa-2x" onclick="eliminarFila(this)"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function eliminarFila(icono) {
+        const confirmar = confirm("¿Estás seguro de que deseas eliminar este registro?");
+        if (confirmar) {
+        const fila = icono.closest("tr");
+        fila.remove();
+        }
+    }
+    </script>
+
 </body>
 </html>
