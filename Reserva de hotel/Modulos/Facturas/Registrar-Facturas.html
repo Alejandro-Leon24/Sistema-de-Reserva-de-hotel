@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Registro de Factura</h1>
+        <h1>Reserva de hotel</h1>
     </header>
     
     <nav class="menu">
@@ -63,22 +63,18 @@
         </ul>
     </nav>
 
-
-
-
     <main>
-        <section id="registrar-factura">
-            <h2>Registrar Factura</h2>
+        <section id="contenedor-principal">
             
-            <div class="form-container">
-                <div class="search-section">
-                    <div class="form-group">
-                        <label for="cedula">Cédula del huésped:</label>
-                        <input type="text" id="cedula" name="cedula" placeholder="Ej: 1234567890" required>
+            <div class="contenedor-formulario">
+                <div class="seccion-busqueda">
+                    <div class="grupo-formulario">
+                        <label for="cedulaHuesped" id ="cedulahuesp">Ingrese Cédula del huésped:</label>
+                        <input type="text" id="cedulainput" name="cedula" placeholder="Ej: 1234567890" required>
                     </div>
                     <button type="submit">Buscar</button>
                     
-                    <div class="guest-summary">
+                    <div class="resumen-huesped">
                         <h3>Resumen:</h3>
                         
                         <h4>Datos del Huésped:</h4>
@@ -91,46 +87,45 @@
                         <p><strong>Precio de la habitación:</strong> $150,2</p>
                         <p><strong>Total a pagar por servicios:</strong> $0</p>
                         
-                        <p class="total-pay">Total a pagar: $150,2</p>
+                        <p class="total-pagar">Total a pagar: $150,2</p>
                     </div>
                 </div>
                 
-                <div class="payment-section">
-                    <div class="payment-section">
-                        <div class="payment-method">
-                            <div class="form-group">
-                                <label for="payment-type">Método de pago:</label>
-                                <select id="payment-type" name="payment-type" class="payment-select">
-                                    <option value="visa">Visa</option>
-                                    <option value="mastercard">MasterCard</option>
-                                    <option value="amex">American Express</option>
-                                    <option value="diners">Diners Club</option>
-                                    <option value="cash">Efectivo</option>
-                                    <option value="transfer">Transferencia Bancaria</option>
-                                </select>
-                            </div>
+                <div class="seccion-pago">
+                    <div class="metodo-pago">
+                        <div class="grupo-formulario">
+                            <label for="payment-type">Método de pago:</label>
+                            <select id="payment-type" name="payment-type" class="seleccion-pago">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">MasterCard</option>
+                                <option value="amex">American Express</option>
+                                <option value="diners">Diners Club</option>
+                                <option value="cash">Efectivo</option>
+                                <option value="transfer">Transferencia Bancaria</option>
+                            </select>
+                        </div>
                         
-                        <div class="form-group">
+                        <div class="grupo-formulario">
                             <label for="card-holder">Nombre del titular:</label>
                             <input type="text" id="card-holder" name="card-holder" value="Aaron">
                         </div>
                         
-                        <div class="form-group">
+                        <div class="grupo-formulario">
                             <label for="card-holder-id">Cédula del titular:</label>
                             <input type="text" id="card-holder-id" name="card-holder-id" value="5454545454">
                         </div>
                         
-                        <div class="form-group">
+                        <div class="grupo-formulario">
                             <label for="card-number">Número de la tarjeta:</label>
                             <input type="text" id="card-number" name="card-number" value="45645634564645">
                         </div>
                         
-                        <div class="form-group">
+                        <div class="grupo-formulario">
                             <label for="expiry-date">Fecha de Vencimiento:</label>
                             <input type="text" id="expiry-date" name="expiry-date" value="31 ene 2025">
                         </div>
                         
-                        <div class="form-group">
+                        <div class="grupo-formulario">
                             <label for="security-code">Código de seguridad:</label>
                             <input type="text" id="security-code" name="security-code" value="456">
                         </div>

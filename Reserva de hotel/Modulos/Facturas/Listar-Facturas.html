@@ -64,15 +64,12 @@
     </nav>
 
     <main>
-        <section id="listar-facturas">
-            <h2>Mostrar Facturas:</h2>
+        <section id="contenedor-factura">
             
             <div class="filter-section">
-                <h3>Registradas</h3>
-                
                 <div class="date-range">
                     <h4>Rango de fecha</h4>
-                    <form class="filter-form">
+                    <form class="filtrar_fecha">
                         <div class="form-group">
                             <label for="start-date">Desde:</label>
                             <input type="date" id="start-date" name="start-date">
@@ -123,7 +120,7 @@
                 </div>
                 
                 <div class="actions">
-                    <button class="print-button">Imprimir</button>
+                    <button class="print-button" id="botonimprimir">Imprimir</button>
                 </div>
                 
                 <div class="summary">
