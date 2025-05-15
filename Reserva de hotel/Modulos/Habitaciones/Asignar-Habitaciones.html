@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asignar Habitación</title>
+    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="../../CSS/Styles_Habitaciones.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de hotel</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li> <a href="../../index.html">Inicio</a></li>
+            <li>
+                <a href="../Huesped/Lobby-Huesped.html">Huesped</a>
+                <ul class="submenu">
+                    <li><a href="../Huesped/Registrar-Huesped.html">Registrar Huesped</a></li>
+                    <li><a href="../Huesped/Listar-Huesped.html">Mostrar Huesped</a></li>
+                    <li><a href="../Huesped/Editar-Huesped.html">Editar Huesped</a></li>
+                    <li><a href="../Huesped/Eliminar-Huesped.html">Eliminar Huesped</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Lobby-Habitaciones.html">Habitación</a>
+                <ul class="submenu">
+                    <li><a href="Registrar-Habitaciones.html">Registrar Habitación</a></li>
+                    <li><a href="Asignar-Habitaciones.html">Asignar Habitación</a></li>
+                    <li><a href="Listar-Habitaciones.html">Mostrar Habitación</a></li>
+                    <li><a href="Editar-Habitaciones.html">Editar Habitación</a></li>
+                    <li><a href="Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Servicios/Lobby-Servicios.html">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="../Servicios/Registrar-Servicios.html">Registrar Servicios</a></li>
+                    <li><a href="../Servicios/Listar-Servicios.html">Mostrar Servicios</a></li>
+                    <li><a href="../Servicios/Editar-Servicios.html">Editar Servicios</a></li>
+                    <li><a href="../Servicios/Eliminar-Servicios.html">Eliminar Servicios</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Facturas/Lobby-Facturas.html">Factura</a>
+                <ul class="submenu">
+                    <li><a href="../Facturas/Registrar-Facturas.html">Registrar Factura</a></li>
+                    <li><a href="../Facturas/Listar-Facturas.html">Mostrar Factura</a></li>
+                    <li><a href="../Facturas/Editar-Facturas.html">Editar Factura</a></li>
+                    <li><a href="../Facturas/Eliminar-Facturas.html">Eliminar Factura</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../Cancelaciones/Lobby-Cancelaciones.html">Cancelaciones</a>
+                <ul class="submenu">
+                    <li><a href="../Cancelaciones/Registrar-Cancelaciones.html">Registrar Cancelaciones</a></li>
+                    <li><a href="../Cancelaciones/Lista-Cancelaciones.html">Mostrar Cancelaciones</a></li>
+                    <li><a href="../Cancelaciones/Editar-Cancelaciones.html">Editar Cancelaciones</a></li>
+                    <li><a href="../Cancelaciones/Eliminar-Cancelaciones.html">Eliminar Cancelaciones</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contenedor-principal">   
+            <div class="contenedor-formulario">
+                <div class="seccion-busqueda">
+                    <div class="grupo-formulario">
+                        <label for="cedula_huesped">Ingrese cédula del huésped:</label>
+                        <div class="grupo-horizontal">
+                            <input type="text" name="cedula_huesped" id="cedula_huesped" maxlength="10" placeholder="Ingrese la cédula del huésped" required>
+                            <button type="submit" class="btn-buscar">Buscar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="info-huesped">
+                        <h3>Información del Huésped</h3>
+
+                        <p><strong>Nombre:</strong> Lisbeth</p>
+                        <p><strong>Apellido:</strong> Lozano</p>
+                        <p><strong>Cédula:</strong> 0987654321</p>
+                    </div>
+                </div>
+                
+                <div class="seccion-asignarHabitacion">
+                    <div class="AsignarH">
+                        <div class="titulo_asignacion">
+                            <h1>Asignación de Habitaciones</h1>   
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="tamaño_habitacion">Tamaño de la habitación:</label>
+                            <select class="select_asignar" name="tamaño_habitacion" id="tamaño_habitacion" required>
+                                <option value="" disabled selected>Seleccione un tamaño</option>
+                                <option value="pequeña">Pequeña 1 - 2</option>
+                                <option value="mediana">Mediana 3 - 4</option>
+                                <option value="grande">Grande 5 - 8</option>
+                            </select>
+                            
+                            
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="num_habitacion">Número de Habitación:</label>
+                            <select class="select_asignar" name="num_habitacion" id="num_habitacion" required>
+                                <option value="" disabled selected>-- Seleccione una Habitación --</option>
+                                <option value="num1">101</option>
+                                <option value="num2">103</option>
+                                <option value="num3">105</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="fecha_entrada">Fecha de entrada:</label>
+                            <input type="date" name="fecha_entrada" id="fecha_entrada">
+                        </div>
+                        
+                        <div class="botones-accion">
+                            <button class="Enviar">Asignar</button>
+                            <button class="Cancelar">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

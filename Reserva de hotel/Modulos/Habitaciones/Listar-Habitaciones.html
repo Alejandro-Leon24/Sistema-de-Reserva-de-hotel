@@ -25,6 +25,7 @@
                 <a href="Lobby-Habitaciones.html">Habitación</a>
                 <ul class="submenu">
                     <li><a href="Registrar-Habitaciones.html">Registrar Habitación</a></li>
+                    <li><a href="Asignar-Habitaciones.html">Asignar Habitación</a></li>
                     <li><a href="Listar-Habitaciones.html">Mostrar Habitación</a></li>
                     <li><a href="Editar-Habitaciones.html">Editar Habitación</a></li>
                     <li><a href="Eliminar-Habitaciones.html">Eliminar Habitación</a></li>
@@ -62,8 +63,13 @@
 
     <form class="formulario">
         <h2>Lista de Habitaciones</h2>
-        <label for="Num_Habitacion">Ingrese el número de Habitación: </label>
-        <input type="number" id="Num_Habitacion" name="Num_Habitacion" placeholder="Ingrese el número de Habitación" required>
+        <label for="select_room">Seleccione las Habitaciones a Mostrar: </label>
+        <select class="seleccionar_listado" name="select_room" id="select_room" required>
+            <option value="" disabled selected>-- Estado de las Habitaciones --</option>
+            <option value="disponibles">Habitaciones Disponibles</option>
+            <option value="ocupadas">Habitaciones Ocupadas</option>
+        </select>
+        <input type="number" class="num_hb" id="Num_Habitacion" name="Num_Habitacion" placeholder="Ingrese el número de Habitación" required>
         <button class="Enviar">Buscar</button>
     </form>
 
@@ -74,6 +80,7 @@
                 <th>Habitación</th>
                 <th>Precio</th>
                 <th>Tamaño</th>
+                <th>Estado</th>
             </tr>
         </thead>
         <tbody>
@@ -82,24 +89,31 @@
                 <td>101</td>
                 <td>$150</td>
                 <td>Pequeña</td>
+                <td>Disponible</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>102</td>
                 <td>$200</td>
                 <td>Mediana</td>
+                <td>
+                    Lisbeth Lozano <br>
+                    <span>(Ocupado)</span>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>103</td>
                 <td>$300</td>
                 <td>Grande</td>
+                <td>Disponible</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>104</td>
                 <td>$300</td>
                 <td>Grande</td>
+                <td>Disponible</td>
             </tr>
         </tbody>
     </table>
