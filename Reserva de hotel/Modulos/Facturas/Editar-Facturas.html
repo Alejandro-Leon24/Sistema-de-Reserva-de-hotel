@@ -66,194 +66,81 @@
         </ul>
     </nav>
 
-    <main>
-        <section id="editar-factura">
-            <br>
-            <br>
+    <form class="formulario">
+        <h2>Editar Factura</h2>
+        <label for="cedula">Ingrese el numero de cédula:</label>
+        <input type="number" name="cedula" id="cedula" placeholder="EJ:0959087654" required>
+        <button class="Enviar">Buscar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Cédula</th>
+                <th>Total Pagado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alberto</td>
+                <td>1234567891</td>
+                <td>$50.00</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>José</td>
+                <td>2344920129</td>
+                <td>$450.00</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aaron</td>
+                <td>34573920123</td>
+                <td>$20.00</td>
+                <td class="acciones-editar">
+                    <i class="fa-solid fa-pen fa-2x" onclick="mostrarModal()"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
             <form class="formulario">
-                <label for="cedula">Ingrese la cédula:</label>
-                <input type="text" id="cedula" name="cedula" placeholder="Ej: 1234567890" required>
-                <button class="Enviar">Buscar</button>
-            </form>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nro</th>
-                        <th>Nombre</th>
-                        <th>Cédula</th>
-                        <th>Total pagado</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Alberto</td>
-                        <td>1234567890</td>
-                        <td>$50.00</td>
-                        <td class="acciones-editar">
-                            <a href="#modal-factura-1" class="icon-link"><i class="fa-solid fa-pen fa-lg"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jose</td>
-                        <td>1212121212</td>
-                        <td>$450.20</td>
-                        <td class="acciones-editar">
-                            <a href="#modal-factura-2" class="icon-link"><i class="fa-solid fa-pen fa-lg"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Aaron</td>
-                        <td>5454545454</td>
-                        <td>$150.20</td>
-                        <td class="acciones-editar">
-                            <a href="#modal-factura-3" class="icon-link"><i class="fa-solid fa-pen fa-lg"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- Modal para Factura 1 -->
-            <div id="modal-factura-1" class="modal">
-                <div class="modal-contenido">
-                    <form class="formulario" action="#" method="post">
-                        <h2>Editar Factura #1</h2>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nombre-1">Nombre:</label>
-                                <input type="text" id="nombre-1" name="nombre" value="Alberto" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cedula-1">Cédula:</label>
-                                <input type="text" id="cedula-1" name="cedula" value="1234567890" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="total-1">Total pagado:</label>
-                                <input type="text" id="total-1" name="total" value="$50.00" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="habitacion-1">Habitación:</label>
-                                <input type="text" id="habitacion-1" name="habitacion" value="109" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="fecha-1">Fecha de Emisión:</label>
-                                <input type="date" id="fecha-1" name="fecha" value="2025-02-12" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-actions">
-                            <button type="submit" class="Enviar">Guardar Cambios</button>
-                            <a href="#" class="Cancelar">Cancelar</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Modal para Factura 2 -->
-            <div id="modal-factura-2" class="modal">
-                <div class="modal-contenido">
-                    <form class="formulario" action="#" method="post">
-                        <h2>Editar Factura #2</h2>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nombre-2">Nombre:</label>
-                                <input type="text" id="nombre-2" name="nombre" value="Jose" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cedula-2">Cédula:</label>
-                                <input type="text" id="cedula-2" name="cedula" value="1212121212" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="total-2">Total pagado:</label>
-                                <input type="text" id="total-2" name="total" value="$450.20" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="habitacion-2">Habitación:</label>
-                                <input type="text" id="habitacion-2" name="habitacion" value="103" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="fecha-2">Fecha de Emisión:</label>
-                                <input type="date" id="fecha-2" name="fecha" value="2025-01-16" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-actions">
-                            <button type="submit" class="Enviar">Guardar Cambios</button>
-                            <a href="#" class="Cancelar">Cancelar</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Modal para Factura 3 -->
-            <div id="modal-factura-3" class="modal">
-                <div class="modal-contenido">
-                    <form class="formulario" action="#" method="post">
-                        <h2>Editar Factura #3</h2>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nombre-3">Nombre:</label>
-                                <input type="text" id="nombre-3" name="nombre" value="Aaron" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cedula-3">Cédula:</label>
-                                <input type="text" id="cedula-3" name="cedula" value="5454545454" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="total-3">Total pagado:</label>
-                                <input type="text" id="total-3" name="total" value="$150.20" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="habitacion-3">Habitación:</label>
-                                <input type="text" id="habitacion-3" name="habitacion" value="102" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="fecha-3">Fecha de Emisión:</label>
-                                <input type="date" id="fecha-3" name="fecha" value="2025-01-19" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-actions">
-                            <button type="submit" class="Enviar">Guardar Cambios</button>
-                            <a href="#" class="Cancelar">Cancelar</a>
-                        </div>
-
-                        
-                    </form>
-                    
-                </div>
-                
-            </div>
-            
-        </section>
-        
-    </main>
+                <h2>Información de Factura</h2>
+                <label form="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre">
+                <label form="cedula">Cédula:</label>
+                <input type="number" name="cedula" id="cedula" placeholder="Ingrese el numero de cédula">
+                <label form="total">Total Pagado:</label>
+                <input type="number" name="total" id="total" placeholder="Ingrese total pagado">
     
-</body>
+            <div>
+                <button type="button" class="Enviar">Guardar</button>
+                <button type="button" class="Cancelar" onclick="cerrarModal()">Cancelar</button>
+            </div>
+            </form>
+        </div>
+    </div>
 
+    <script>
+        function mostrarModal(){
+            document.getElementById("modal").style.display="flex";
+        }
+
+        function cerrarModal(){
+            document.getElementById("modal").style.display="none";
+        }
+    </script>
+</body>
 </html>

@@ -202,7 +202,9 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
-  }
+    padding-right: 2%; 
+}
+
   
   .actions .print-button {
     padding: 5px 10px; 
@@ -229,3 +231,111 @@
   }
 
 
+.modal-contenido {
+  background: white;
+  padding: 25px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido form.formulario{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+.modal-contenido form.formulario input{
+  width: 95%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  justify-content: center;
+}
+
+/* ESTILOS PARA LA TABLA DE FACTURAS */
+table {
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+}
+
+thead tr{
+  background-color: #343a40; /* Cambia el color de fondo del encabezado */
+  color: white; /* Cambia el color del texto del encabezado */
+  font-size: 20px;
+}
+
+td, th{
+  padding: 12px;
+  border: 1px solid #ccc; /* Cambia el borde a gris */
+}
+
+td{
+  text-align: start;
+}
+
+
+
+.tablamostrar {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+}
+
+
+
+
+
+.filter-section h4 {
+    font-size: 28px;
+    color: #04182c;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.factura-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.factura-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.print-button {
+    padding: 8px 16px;
+    background-color: #e66b3e;
+    color: #f2f3f4;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.print-button:hover {
+    background-color: #d35400;
+}
