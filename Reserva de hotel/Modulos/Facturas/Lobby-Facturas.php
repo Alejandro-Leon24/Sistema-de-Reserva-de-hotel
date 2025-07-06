@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Facturas</title>
-    <link rel="stylesheet" href="../../CSS/Styles.css">
+    <link rel="stylesheet" href="../../CSS/Styles.css" />
     <link rel="stylesheet" href="../../CSS/Style_Facturas.css">
+    <title>Lobby Facturas</title>
 </head>
 <body>
     <header>
         <h1>Reserva de hotel</h1>
     </header>
-    
     <nav class="menu">
         <ul>
-            <li><a href="../../index.html">Inicio</a></li>
+            <li> <a href="../../index.html">Inicio</a></li>
             <li>
                 <a href="../Huesped/Lobby-Huesped.html">Huesped</a>
                 <ul class="submenu">
@@ -44,12 +41,12 @@
                 </ul>
             </li>
             <li>
-                <a href="Lobby-Facturas.html">Factura</a>
+                <a href="../Facturas/Lobby-Facturas.php">Factura</a>
                 <ul class="submenu">
-                    <li><a href="Registrar-Facturas.html">Registrar Factura</a></li>
-                    <li><a href="Listar-Facturas.html">Mostrar Factura</a></li>
-                    <li><a href="Editar-Facturas.html">Editar Factura</a></li>
-                    <li><a href="Eliminar-Facturas.html">Eliminar Factura</a></li>
+                    <li><a href="Registrar-Facturas.php">Registrar Factura</a></li>
+                    <li><a href="Listar-Facturas.php">Mostrar Factura</a></li>
+                    <li><a href="Editar-Facturas.php">Editar Factura</a></li>
+                    <li><a href="Eliminar-Facturas.php">Eliminar Factura</a></li>
                 </ul>
             </li>
             <li>
@@ -63,69 +60,32 @@
             </li>
         </ul>
     </nav>
-
-    <form class="formulario">
-       <div class="filter-section">
-                <div class="date-range">
-                    <h4>Listar Facturas</h4>
-                    <form class="filtrar_fecha">
-                        <div class="form-group">
-                            <label for="start-date">Desde:</label>
-                            <input type="date" id="start-date" name="start-date">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label for="end-date">Hasta:</label>
-                            <input type="date" id="end-date" name="end-date">
-                        </div>
-                    </form>
-                </div>
-                <br>
-        <button class="Enviar">Buscar</button>
-    </form>
-    
-    <table class="tablamostrar">
-        <thead>
-            <tr>
-                <th>Nro</th>
-                <th>Nombre</th>
-                <th>Nro.Habitacion</th>
-                <th>Total A pagar</th>
-                <th>Fecha de Facturacion</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Alberto</td>
-                <td>1234567891</td>
-                <td>$50.00</td>
-                <td>12 feb 2025</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>José</td>
-                <td>2344920129</td>
-                <td>$450.00</td>
-                <td>12 feb 2025</td>
-
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Aaron</td>
-                <td>34573920123</td>
-                <td>$20.00</td>
-                <td>12 feb 2025</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="factura-footer">
-    <p class="factura-total"><strong>Total Facturas:</strong> 3</p>
-    <button class="print-button" id="botonimprimir">Imprimir</button>
-</div>
-
-            
-
+    <main class="acciones">
+    <section>
+        <a href="Registrar-Facturas.php">
+            <img src="../../Imagenes/Factura.png" class="img_room" alt="Registrar Factura">
+            Registrar Factura
+        </a>
+    </section>
+    <section>
+        <a href="Listar-Facturas.php">
+            <img src="../../Imagenes/Listar-Usuario.png" alt="Listar Factura">
+            Mostrar Factura
+        </a>
+    </section>
+    <section>
+        <a href="Editar-Facturas.php">
+            <img src="../../Imagenes/Editar.png" alt="Editar Factura">
+            Editar Factura
+        </a>
+    </section>
+    <section>
+        <a href="Eliminar-Facturas.php">
+            <img src="../../Imagenes/Eliminar.png" alt="Eliminar Factura">
+            Eliminar Factura
+        </a>
+    </section>
+</main>
 
 </body>
 </html>
