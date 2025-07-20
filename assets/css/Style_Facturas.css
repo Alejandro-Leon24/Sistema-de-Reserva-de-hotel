@@ -1,0 +1,1079 @@
+* {
+    font-family: Inter, sans-serif;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.modulos {
+    padding: 20px 0 10px;
+    height: 250px;
+    display: flex;
+    min-width: 218px;
+    max-width: 280px;
+    flex: 1 1 0px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modulos:hover {
+    transform-origin: center bottom;
+    transform: scale(1.01) translateY(-2px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.botones-menu a {
+    min-width: 180px;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-decoration: none;
+}
+
+.botones-menu {
+    min-width: 180px;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+}
+
+.botones-menu button {
+    font-size: 0.8rem;
+    padding: 10px;
+    margin: 0;
+}
+
+nav {
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header-modulos {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-modulos h3 {
+    margin: 0;
+}
+
+button svg {
+    position: relative;
+    left: 5px;
+    transition: left 0.3s ease;
+}
+
+button:hover svg {
+    left: 10px;
+}
+
+button:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+.logo {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modulos span {
+    font-size: 0.6em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-weight: bold;
+}
+
+.decorative-svg {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 160px;
+    height: 160px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    .decorative-svg {
+        left: 10px;
+        top: 10px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.landing-content {
+    z-index: 2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.landing-content h1 {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 10px #0003;
+}
+
+.subtitle {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 1px 4px #0002;
+}
+
+.collage-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+}
+
+.collage-img {
+    width: 280px;
+    height: 170px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    box-shadow: 0 6px 30px #0002;
+    position: absolute;
+    transition: filter 0.3s;
+}
+
+.img1 {
+    left: 30px;
+    top: -30px;
+    background-image: url('/assets/img/HUESPEDES.jpg');
+    transform: rotate(-7deg);
+}
+
+.img2 {
+    left: 150px;
+    top: 80px;
+    background-image: url('/assets/img/habitaciones.jpeg');
+    filter: blur(0.5px) brightness(1);
+    z-index: 2;
+    transform: scale(1.1) rotate(2deg);
+    transform: rotate(8deg);
+}
+
+.img3 {
+    right: 150px;
+    top: 60px;
+    background-image: url('/assets/img/servicio1.jpg');
+    filter: blur(0.5px) brightness(1);
+    z-index: 2;
+    transform: scale(1.1) rotate(2deg);
+}
+
+.img4 {
+    right: 30px;
+    top: -30px;
+    background-image: url('/assets/img/servicio2.jpg');
+
+}
+
+.img5 {
+    top: 280px;
+    background-image: url('/assets/img/estrellas.png');
+    filter: blur(0.5px) brightness(1);
+    z-index: 2;
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: none;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 10;
+    text-shadow: 0 1px 2px #0002;
+}
+.form-registrar{
+    margin-top: 40px;
+}
+.form-registrar input{
+    border-radius: 10px;
+}
+.form-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row1{
+    width: 150px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.row2{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grupo{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.grupo-input{
+    gap: 20px;
+    padding: 0;
+}
+
+/* =========================
+   GENERAL
+========================= */
+* {
+  font-family: Inter, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+}
+
+/* =========================
+   FORMULARIO REGISTRAR
+========================= */
+.form-registrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.form-registrar input,
+.form-registrar button {
+  width: 180px;
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#cedulainput {
+  text-align: center;
+}
+
+.form-registrar button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-registrar button:hover {
+  background-color: #1565c0;
+}
+
+.boton-verde:hover {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 2px solid #1976d2;
+  /* Borde azul */
+  background-color: rgb(29, 62, 146);
+  /* Fondo blanco */
+  color: #e2e5e8;
+  /* Texto azul */
+  border-radius: 6px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* =========================
+   FORMULARIO PAGO
+========================= */
+#formPago {
+  background: linear-gradient(135deg, #3a3f51, #646f8c);
+  padding: 30px;
+  border-radius: 16px;
+  color: #ecf0f1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#formPago:hover {
+  transform: scale(1.02);
+}
+
+#formPago::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 160px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+
+form#formPago .grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 0 15px 0;
+}
+
+#formPago .grupo-formulario input[type="text"],
+#formPago .grupo-formulario input[type="password"],
+#formPago .grupo-formulario input[type="month"],
+#formPago .grupo-formulario select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+form#formPago label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #f1f0f0;
+  width: 100%;
+  text-align: left;
+}
+
+#formPago h4,
+#formPago label {
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+/* =========================
+   RESUMEN HUESPED
+========================= */
+.resumen-huesped p span {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.resumen-huesped .total-pago {
+  color: #000 !important;
+}
+
+.total-pagar {
+  font-weight: bold;
+}
+
+
+.resumen-huesped {
+  background: linear-gradient(135deg, #2c3e50, #14535c);
+  padding: 25px 30px;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  color: #ecf0f1;
+  text-align: left;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.resumen-huesped:hover {
+  transform: scale(1.02);
+}
+
+.resumen-huesped::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.resumen-huesped h3,
+.resumen-huesped h4 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.resumen-huesped p,
+.resumen-huesped label {
+  color: #f8f9fa;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+/* =========================
+   GRUPO FORMULARIO (GENERAL)
+========================= */
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto 10px auto;
+}
+
+.grupo-formulario input[type="text"] {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+.grupo {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.grupo-input {
+  gap: 20px;
+  padding: 0;
+}
+
+/* =========================
+   MENÚ Y MÓDULOS
+========================= */
+.menu {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.modulos {
+  padding: 20px 0 10px;
+  height: 250px;
+  display: flex;
+  min-width: 218px;
+  max-width: 280px;
+  flex: 1 1 0px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modulos:hover {
+  transform-origin: center bottom;
+  transform: scale(1.01) translateY(-2px);
+  cursor: pointer;
+}
+
+.modulos span {
+  font-size: 0.6em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+.botones-menu {
+  min-width: 180px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+}
+
+.botones-menu a {
+  min-width: 180px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-decoration: none;
+}
+
+.botones-menu button {
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+button svg {
+  position: relative;
+  left: 5px;
+  transition: left 0.3s ease;
+}
+
+button:hover svg {
+  left: 10px;
+}
+
+button:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+/* =========================
+   HEADER Y LOGO
+========================= */
+nav {
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header-modulos {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-modulos h3 {
+  margin: 0;
+}
+
+.logo {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* =========================
+   LANDING Y COLLAGE
+========================= */
+.banner p {
+  font-weight: bold;
+}
+
+.landing-content {
+  z-index: 2;
+  margin: 40px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.landing-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 10px #0003;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 1px 4px #0002;
+}
+
+.collage-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.collage-img {
+  width: 280px;
+  height: 170px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  box-shadow: 0 6px 30px #0002;
+  position: absolute;
+  transition: filter 0.3s;
+}
+
+.img1 {
+  left: 30px;
+  top: -30px;
+  background-image: url('/assets/img/HUESPEDES.jpg');
+  transform: rotate(-7deg);
+}
+
+.img2 {
+  left: 150px;
+  top: 80px;
+  background-image: url('/assets/img/habitaciones.jpeg');
+  filter: blur(0.5px) brightness(1);
+  z-index: 2;
+  transform: rotate(8deg);
+}
+
+.img3 {
+  right: 150px;
+  top: 60px;
+  background-image: url('/assets/img/servicio1.jpg');
+  filter: blur(0.5px) brightness(1);
+  z-index: 2;
+  transform: rotate(2deg);
+}
+
+.img4 {
+  right: 30px;
+  top: -30px;
+  background-image: url('/assets/img/servicio2.jpg');
+}
+
+.img5 {
+  top: 280px;
+  background-image: url('/assets/img/estrellas.png');
+  filter: blur(0.5px) brightness(1);
+  z-index: 2;
+  transform: rotate(2deg);
+  box-shadow: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 10;
+  text-shadow: 0 1px 2px #0002;
+}
+
+/* =========================
+   FORM CONTENT & ROWS
+========================= */
+.form-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row1 {
+  width: 150px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.row2 {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   RESPONSIVE SVG
+========================= */
+.decorative-svg {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .decorative-svg {
+    left: 10px;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* =========================
+   MENSAJES
+========================= */
+.mensaje {
+  padding: 1rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin: 1rem auto;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.mensaje.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* =========================
+   CONTENEDORES
+========================= */
+#contenedor-principal {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* Para que en pantallas pequeñas se apilen */
+  padding: 0 20px;
+}
+
+.resumen-huesped,
+#formPago {
+  flex: 1 1 400px;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #444;
+  /* <-- Gris oscuro */
+  color: white;
+}
+
+
+#formPago {
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BOTÓN PAGAR
+========================= */
+#formPago button[type="submit"],
+.boton-pagar {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #080f38;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+#formPago button[type="submit"]:hover,
+.boton-pagar:hover {
+  background-color: #080f38;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE PAGO
+========================= */
+@media (max-width: 600px) {
+  #formPago {
+    padding: 20px;
+  }
+
+  #formPago button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* =========================
+   TABLAS
+========================= */
+table {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* =========================
+   MODALES
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-contenido h2 {
+  margin-top: 0;
+}
+
+.modal-contenido button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* =========================
+   FORM SUBMIT BUTTONS
+========================= */
+
+
+/* =========================
+   OTROS
+========================= */
+.total-facturas {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* =========================
+   BUSCADOR Y ACCIONES
+========================= */
+.buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.buscador label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.acciones-botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.acciones-botones button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 0.2rem;
+  transition: color 0.2s ease;
+}
+
+.btn-ver {
+  color: #2a9d8f;
+}
+
+.btn-editar {
+  color: #e9c46a;
+}
+
+.btn-eliminar {
+  color: #e63946;
+}
+
+.total-facturas {
+  margin-left: 130px;
+}
+
+.acciones-botones form {
+  display: inline;
+  /* o inline-block */
+  margin: 0;
+  padding: 0;
+}
+
+.acciones-botones button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.form-buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 90%;
+  /* quitamos el borde para el contenedor */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-buscador input[type="text"] {
+  width: 400px;
+  /* un poco más largo */
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  /* fondo suave para que se vea input */
+}
+
+.titulo {
+  text-align: center;
+}
+
+.buscar {
+  width: 20px;
+  padding: 15px 0;
+  font-size: 1rem;
+
+}
+
+.form-buscador button.buscar {
+  width: 30%;
+  /* ancho automático para que no sea largo */
+  min-width: 100px;
+  /* ancho mínimo para que no quede muy pequeño */
+  padding: 10px 20px;
+  /* más alto y con relleno horizontal */
+  font-size: 1rem;
+  border: 5px;
+  /* sin borde */
+  border-radius: 10px;
+  /* redondeado */
+  background-color: #1976d2;
+  /* azul */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-buscador button.buscar {
+  background-color: #1565c0;
+  text-decoration: none;
+
+}
+
+/*modales */
+#modalEditar .modal-contenido {
+  width: 400px;
+  max-width: 90vw;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#modalEditar .modal-contenido form>div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+#modalEditar .modal-contenido button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#modalEditar .modal-contenido button {
+  background-color: #1565c0;
+}

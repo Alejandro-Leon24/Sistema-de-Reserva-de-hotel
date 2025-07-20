@@ -1,0 +1,424 @@
+* {
+  font-family: Inter, sans-serif;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.modulos {
+  padding: 20px 0 10px;
+  height: 250px;
+  display: flex;
+  min-width: 218px;
+  max-width: 280px;
+  flex: 1 1 0px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modulos:hover {
+  transform-origin: center bottom;
+  transform: scale(1.01) translateY(-2px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.botones-menu a {
+  min-width: 180px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-decoration: none;
+}
+
+.botones-menu {
+  min-width: 180px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+}
+
+.botones-menu button {
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: 0;
+}
+
+nav {
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header-modulos {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-modulos h3 {
+  margin: 0;
+}
+
+button svg {
+  position: relative;
+  left: 5px;
+  transition: left 0.3s ease;
+}
+
+button:hover svg {
+  left: 10px;
+}
+
+.boton-estatico {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.boton-estatico svg {
+  left: 0;
+  transition: none;
+}
+
+.boton-estatico:hover svg {
+  left: 0;
+}
+
+button:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+.logo {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modulos span {
+  font-size: 0.6em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-weight: bold;
+}
+
+.decorative-svg {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .decorative-svg {
+    left: 10px;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.landing-content {
+  z-index: 2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.landing-content h1 {
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 10px #0003;
+}
+
+.subtitle {
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 1px 4px #0002;
+}
+
+.collage-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.collage-img {
+  width: 280px;
+  height: 170px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  box-shadow: 0 6px 30px #0002;
+  position: absolute;
+  transition: filter 0.3s;
+}
+
+.img1 {
+  left: 30px;
+  top: -30px;
+  background-image: url('/assets/img/HUESPEDES.jpg');
+  transform: rotate(-7deg);
+}
+
+.img2 {
+  left: 150px;
+  top: 80px;
+  background-image: url('/assets/img/habitaciones.jpeg');
+  filter: blur(0.5px) brightness(1);
+  z-index: 2;
+  transform: scale(1.1) rotate(2deg);
+  transform: rotate(8deg);
+}
+
+.img3 {
+  right: 150px;
+  top: 60px;
+  background-image: url('/assets/img/servicio1.jpg');
+  filter: blur(0.5px) brightness(1);
+  z-index: 2;
+  transform: scale(1.1) rotate(2deg);
+}
+
+.img4 {
+  right: 30px;
+  top: -30px;
+  background-image: url('/assets/img/servicio2.jpg');
+
+}
+
+.img5 {
+  top: 280px;
+  background-image: url('/assets/img/estrellas.png');
+  filter: blur(0.5px) brightness(1);
+  z-index: 2;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: none;
+}
+
+.footer {
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 10;
+  text-shadow: 0 1px 2px #0002;
+}
+
+.form-registrar {
+  margin-top: 40px;
+}
+
+.form-registrar input {
+  border-radius: 10px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row1 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 45px;
+  padding: 10px;
+}
+
+.row2 {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grupo {
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.grupo-input {
+  gap: 20px;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+main {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.search-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.search-group input {
+  flex: 1 1 200px;
+}
+
+form>div {
+  margin-bottom: 1rem;
+}
+
+.form-registrar {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 1rem;
+}
+
+.form-wrapper-centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 2rem;
+}
+
+.input-estrecho {
+  width: 100%;
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+#form-reserva {
+  padding: 0 1rem;
+}
+
+.search-group input {
+  flex: 1;
+}
+
+.search-group button {
+  max-width: 150px;
+}
+
+.icono-ver {
+  background-color: #e7f3ff;
+  color: #0d6efd;
+}
+
+.icono-ver:hover {
+  background-color: #cfe3ff;
+  color: #084bb2;
+}
+
+.icono-editar {
+  background-color: #fff3cd;
+  color: #ffc107;
+}
+
+.icono-editar:hover {
+  background-color: #ffe8a1;
+  color: #cc9a06;
+}
+
+.icono-eliminar {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+.icono-eliminar:hover {
+  background-color: #f1b4bb;
+  color: #a51e2f;
+}
+
+.cerrar-x {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #6c757d;
+  /* gris plomo suave */
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.cerrar-x:hover {
+  color: #343a40;
+  transform: scale(1.2);
+}
+
+.botones-editar button {
+  width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton-guardar {
+  background-color: var(--pico-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-cerrar {
+  background-color: #adb5bd;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-guardar:hover {
+  background-color: var(--pico-primary-hover);
+}
+
+.boton-cerrar:hover {
+  background-color: #868e96;
+}
